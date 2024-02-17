@@ -17,4 +17,14 @@
     * This helps in calling the function directly from client to the server. It's like we have server and the client at the same place
     * Here instead of JSON, we use protobuf. Due to having small size the communication is fast
 
+<hr>
+
+<hr>
+
+# **Client ===== Server**
+* Streaming 
+* Continuous flow of data
+* Asynchoronus that means there is no waiting for the server to resond back and hence it's fast
+* Microservices and the BlockChain peers communication
+
 
