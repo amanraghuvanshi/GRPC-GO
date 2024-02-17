@@ -8,3 +8,9 @@
 # **Proof of Concept**
 
     * Client -- > Server (Regular Architecture)
+    * This is synchoronus and slow and can't be scaled (in case lots of server and mircoservices)
+
+
+
+
+
