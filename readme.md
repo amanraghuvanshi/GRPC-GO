@@ -11,6 +11,10 @@
     * This is synchoronus and slow and can't be scaled (in case lots of server and mircoservices)
 
 
+# **Concept of gRPC**
 
+    * Client --> Server (Remote Calls)
+    * This helps in calling the function directly from client to the server. It's like we have server and the client at the same place
+    * Here instead of JSON, we use protobuf. Due to having small size the communication is fast
 
 
