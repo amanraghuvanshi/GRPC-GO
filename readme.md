@@ -44,6 +44,11 @@
 * **Bi-Directional Streaming**
     * Client and Server both communicate using streams. It completely asynchoronus in the nature. There is no order while sending that either client should send first or the server should.
 
+<hr>
+
+# **ProtoBuf File for the configuration**
+
+**Here we have all the streaming configuration done and ready for the communication between the server and client. The direction of the stream and their returns has been declared. We now have to work on code, to generate some code.**
 
 
 
