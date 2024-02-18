@@ -4,12 +4,17 @@ import (
 	"log"
 	"net"
 
+	pb "github.com/amanraghuvanshi/grpc-go/proto"
 	"google.golang.org/grpc"
 )
 
 const (
 	port = ":8080"
 )
+
+type helloServer struct {
+	pb.GreetServiceServer
+}
 
 func main() {
 	// # starting the server at on the machine
@@ -21,6 +26,7 @@ func main() {
 	// starting the gRPC server on the machines
 	grpcServer := grpc.NewServer()
 	pb.RegisterGreetServiceServer(grpcServer, &helloServer{})
+	log.Printf("Server Started at %v", lis.Addr())
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to start the gRPC Server, %v", err)
 	}
