@@ -61,3 +61,7 @@
     * go install google.golang.org/protobuf/cmd/protoc-gen-go
     * go get -u google.golang.org/grpc/cmd/protoc-gen-go-grpc
     * go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
+
+<hr>
+
+**Once we are done with creation of the .pb file, run the `tidy` command in the kernel to get all the dependencies**
