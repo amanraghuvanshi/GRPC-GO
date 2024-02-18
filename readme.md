@@ -65,3 +65,11 @@
 <hr>
 
 **Once we are done with creation of the .pb file, run the `tidy` command in the kernel to get all the dependencies**
+
+<hr>
+
+<hr>
+
+# **Talks on the API**
+
+* In the server as well as the client for the unary we have seperate relation, where the client will send one request and the server will respond with the HelloResponse**
