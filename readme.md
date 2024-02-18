@@ -73,3 +73,5 @@
 # **Talks on the API**
 
 * In the server as well as the client for the unary we have seperate relation, where the client will send one request and the server will respond with the HelloResponse**
+
+* We are sending a request with no params but we are expecting some response and the server should respond
