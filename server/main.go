@@ -20,6 +20,7 @@ func main() {
 
 	// starting the gRPC server on the machines
 	grpcServer := grpc.NewServer()
+	pb.RegisterGreetServiceServer(grpcServer, &helloServer{})
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to start the gRPC Server, %v", err)
 	}
