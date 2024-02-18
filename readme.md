@@ -50,5 +50,14 @@
 
 **Here we have all the streaming configuration done and ready for the communication between the server and client. The direction of the stream and their returns has been declared. We now have to work on code, to generate some code.**
 
+**Here we also need to create the protobuf file for the communication and the same could be done using**
+
+**`protoc --go_out=. --go-grpc_out=.`**
 
 
+**If in case the code is not running we need to download some dependencies**
+    * go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+    * go get -u google.golang.org/protobuf/cmd/protoc-gen-go
+    * go install google.golang.org/protobuf/cmd/protoc-gen-go
+    * go get -u google.golang.org/grpc/cmd/protoc-gen-go-grpc
+    * go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
