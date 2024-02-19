@@ -10,12 +10,10 @@ import (
 
 // server streaming function
 func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList) {
-	log.Println("Streaming Started")
-
+	log.Printf("Streaming started")
 	stream, err := client.SayHelloServerStreaming(context.Background(), names)
-
 	if err != nil {
-		log.Fatalf("Couldnt send the names: %v", err)
+		log.Fatalf("Could not send names: %v", err)
 	}
 
 	for {
@@ -23,12 +21,11 @@ func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList)
 		if err == io.EOF {
 			break
 		}
-
 		if err != nil {
-			log.Fatalf("Error while streaming the data %v", err)
+			log.Fatalf("Error while streaming %v", err)
 		}
 		log.Println(message)
 	}
-	log.Printf("Streaming Finished!")
 
+	log.Printf("Streaming finished")
 }
