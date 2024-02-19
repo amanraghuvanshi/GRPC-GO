@@ -36,9 +36,9 @@ func main() {
 	// callSayHelloServerStream(client, names)
 
 	//client-size streaming
-	callsayHelloClientStream(client, names)
+	// callsayHelloClientStream(client, names)
 
 	// bi-directional streaming
-	// callHelloBiDirectionalStreaming(client, names)
+	callHelloBiDirectionalStreaming(client, names)
 
 }

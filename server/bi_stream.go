@@ -7,7 +7,7 @@ import (
 	pb "github.com/amanraghuvanshi/grpc-go/proto"
 )
 
-func (s *helloServer) SayHelloBidirectionalStreaming(stream pb.GreetService_SayHelloBiDirectionalStreamingServer) error {
+func (s *helloServer) SayHelloBiDirectionalStreaming(stream pb.GreetService_SayHelloBiDirectionalStreamingServer) error {
 
 	// since both the sides are equally responsible for sending stream and processing them, so we need to process them both
 
