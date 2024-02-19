@@ -2,12 +2,13 @@ package main
 
 import (
 	"log"
+	"time"
 
 	pb "github.com/amanraghuvanshi/grpc-go/proto"
 )
 
 // Stream response send
-func (s *helloServer) callSayHelloServerStreaming(req *pb.NamesList, stream pb.GreetService_SayHelloServerStreamingServer) error {
+func (s *helloServer) sayHelloServerStreaming(req *pb.NamesList, stream pb.GreetService_SayHelloServerStreamingServer) error {
 	log.Printf("Got Request with names: %v", req.Names)
 
 	for _, name := range req.Names {
@@ -20,6 +21,7 @@ func (s *helloServer) callSayHelloServerStreaming(req *pb.NamesList, stream pb.G
 		}
 
 		// adding some delay,
+		time.Sleep(2 * time.Second)
 	}
 	return nil
 }

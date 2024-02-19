@@ -28,5 +28,10 @@ func main() {
 		Names: []string{"Aman", "Alice", "Bob"},
 	}
 
-	callSayHello(client)
+	// for the unary API, uncomment
+	// callSayHello(client)
+
+	// callsayHelloClient()
+	sayHelloServerStream(client, names)
+
 }
