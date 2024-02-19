@@ -24,5 +24,9 @@ func main() {
 
 	client := pb.NewGreetServiceClient(conn)
 
+	names := &pb.NamesList{
+		Names: []string{"Aman", "Alice", "Bob"},
+	}
+
 	callSayHello(client)
 }
