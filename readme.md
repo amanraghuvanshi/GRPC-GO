@@ -81,6 +81,24 @@
 
 * **For the part of server stream, the server is going to send the stream of response to the client and then client is only going to send the request to the server. This all will be handled by the `sayHelloServerStreaming`**
 
-* **Similarly in the case of the client streaming, client will send the stream of the data towards the server and the server will response to the client with one response**
+* **Similarly in the case of the client streaming, client will send the stream of the data towards the server and the server will response to the client with one response using this function `callsayHelloClientStream`**
+
+**For the bidirectional streaming both the server as well the as the client will keep sending the stream to each other**
+
+<hr>
+
+<hr>
+
+# **Running the code**
+
+* **Load up all the dependencies use `go mod tidy`**
+
+<hr>
+
+* **Whichever load function needs to performed uncomment that one**
+
+<hr>
+
+* **Launch server, port defined is :8080**
 
 <hr>

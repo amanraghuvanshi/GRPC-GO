@@ -13,6 +13,7 @@ const (
 )
 
 func main() {
+	// setting up the connection
 	conn, err := grpc.Dial("localhost"+port, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	if err != nil {
